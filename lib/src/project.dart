@@ -35,7 +35,7 @@ class Project {
     _root = new DirectoryGenerator(dir, this);
   }
 
-  Future<Project> load([Directory directory]) async {
+  static Future<Project> load([Directory directory]) async {
     var dir = directory ?? Directory.current;
     var pubspec = await PubSpec.load(dir);
     return new Project(
@@ -45,7 +45,7 @@ class Project {
         dir).._pubspec = pubspec;
   }
 
-  Project loadSync([Directory directory]) {
+  static Project loadSync([Directory directory]) {
     var dir = directory ?? Directory.current;
     var pubspecFile = new File.fromUri(dir.uri.resolve('pubspec.yaml'));
     var pubspec = new PubSpec.fromYamlString(pubspecFile.readAsStringSync());

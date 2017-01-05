@@ -1,5 +1,5 @@
 name: project_gen
-version: 0.0.0
+version: 0.0.1
 description: A simple scaffolding framework for Dart CLI tools.
 environment:
   sdk: ">=1.19.0"
