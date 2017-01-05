@@ -1,6 +1,8 @@
 name: project_gen
 version: 0.0.0
 description: A simple scaffolding framework for Dart CLI tools.
+environment:
+  sdk: ">=1.19.0"
 author: Tobe O <thosakwe@gmail.com>
 homepage: https://github.com/thosakwe/project_gen.git
 dependencies:
