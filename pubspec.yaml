@@ -1,0 +1,15 @@
+name: project_gen
+version: 0.0.0
+description: A simple scaffolding framework for Dart CLI tools.
+author: Tobe O <thosakwe@gmail.com>
+homepage: https://github.com/thosakwe/project_gen.git
+dependencies:
+    args: ^0.13.7
+    console: ^2.2.4
+    id: ^1.0.0
+    intl: ^0.14.0
+    mustache4dart: ^1.0.0
+    pubspec: ^0.0.14
+    resource: ^2.0.0
+dev_dependencies:
+    test: ^0.12.15
